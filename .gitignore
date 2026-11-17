@@ -1,0 +1,18 @@
+.gradle/
+.idea/
+local.properties
+**/build/
+*.iml
+
+# Local secrets, data, and generated packages
+.env*
+.dev.vars*
+*.jks
+*.keystore
+*.pem
+*.apk
+*.aab
+*.db
+*.sqlite*
+*.log
+.DS_Store

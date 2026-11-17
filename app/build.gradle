@@ -1,0 +1,22 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'com.example.foodlog'
+    compileSdk 34
+    defaultConfig {
+        applicationId 'com.example.foodlog'
+        minSdk 26
+        targetSdk 34
+        versionCode 10
+        versionName '1.8'
+    }
+    packaging { resources { merges += ['META-INF/LICENSE.md', 'META-INF/NOTICE.md'] } }
+    testOptions { unitTests.includeAndroidResources = true }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+}
+dependencies {
+    implementation 'androidx.core:core:1.13.0'
+    implementation 'com.sun.mail:android-mail:1.6.7'
+    implementation 'com.sun.mail:android-activation:1.6.7'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.robolectric:robolectric:4.14.1'
+}
